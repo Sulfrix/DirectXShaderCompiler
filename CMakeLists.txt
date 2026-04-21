@@ -644,11 +644,6 @@ endif( ${CMAKE_SYSTEM_NAME} MATCHES SunOS )
 # use export_executable_symbols(target).
 set(CMAKE_SHARED_LIBRARY_LINK_CXX_FLAGS "")
 
-# enable warnings as errors for debug build
-if (MSVC)
-  SET(CMAKE_CXX_FLAGS_DEBUG  "${CMAKE_CXX_FLAGS_DEBUG} /WX")
-endif (MSVC)
-
 include(AddLLVM)
 include(TableGen)
 
